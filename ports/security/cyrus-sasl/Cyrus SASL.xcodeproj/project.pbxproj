@@ -23,7 +23,6 @@
 		A05125071278E7FE00DE46C4 /* sasldb_init.c in Sources */ = {isa = PBXBuildFile; fileRef = A0FB5A15126E55630057FEE9 /* sasldb_init.c */; };
 		A09611DF126F96BA00671A97 /* db_none.c in Sources */ = {isa = PBXBuildFile; fileRef = A0FB5A7C126E55630057FEE9 /* db_none.c */; };
 		A09611E0126F96C600671A97 /* allockey.c in Sources */ = {isa = PBXBuildFile; fileRef = A0FB5A78126E55630057FEE9 /* allockey.c */; };
-		A09611FB126F9D2900671A97 /* anonymous.c in Sources */ = {isa = PBXBuildFile; fileRef = A0FB59FA126E55630057FEE9 /* anonymous.c */; };
 		A09611FC126F9D2900671A97 /* anonymous_init.c in Sources */ = {isa = PBXBuildFile; fileRef = A0FB59FB126E55630057FEE9 /* anonymous_init.c */; };
 		A09611FD126F9D3100671A97 /* cram.c in Sources */ = {isa = PBXBuildFile; fileRef = A0FB59FC126E55630057FEE9 /* cram.c */; };
 		A09611FE126F9D3100671A97 /* crammd5_init.c in Sources */ = {isa = PBXBuildFile; fileRef = A0FB59FD126E55630057FEE9 /* crammd5_init.c */; };
@@ -43,6 +42,9 @@
 		A0FB5AA6126E55B70057FEE9 /* seterror.c in Sources */ = {isa = PBXBuildFile; fileRef = A0FB58BF126E55630057FEE9 /* seterror.c */; };
 		A0FB5AA7126E56410057FEE9 /* plugin_common.c in Sources */ = {isa = PBXBuildFile; fileRef = A0FB5A12126E55630057FEE9 /* plugin_common.c */; };
 		AA747D9F0F9514B9006C5449 /* sasl2_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* sasl2_Prefix.pch */; };
+		FA1106DD171FD3EB00301FBD /* xoauth2_init.c in Sources */ = {isa = PBXBuildFile; fileRef = FA1106DB171FD3EA00301FBD /* xoauth2_init.c */; };
+		FA1106DE171FD3EB00301FBD /* xoauth2.c in Sources */ = {isa = PBXBuildFile; fileRef = FA1106DC171FD3EB00301FBD /* xoauth2.c */; };
+		FA1106E0171FD43100301FBD /* anonymous.c in Sources */ = {isa = PBXBuildFile; fileRef = FA1106DF171FD43100301FBD /* anonymous.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -569,7 +571,6 @@
 		A0FB59F7126E55630057FEE9 /* Makefile.am */ = {isa = PBXFileReference; explicitFileType = sourcecode.make; fileEncoding = 4; path = Makefile.am; sourceTree = "<group>"; };
 		A0FB59F8126E55630057FEE9 /* Makefile.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
 		A0FB59F9126E55630057FEE9 /* NTMakefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NTMakefile; sourceTree = "<group>"; };
-		A0FB59FA126E55630057FEE9 /* anonymous.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = anonymous.c; sourceTree = "<group>"; };
 		A0FB59FB126E55630057FEE9 /* anonymous_init.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = anonymous_init.c; sourceTree = "<group>"; };
 		A0FB59FC126E55630057FEE9 /* cram.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cram.c; sourceTree = "<group>"; };
 		A0FB59FD126E55630057FEE9 /* crammd5_init.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = crammd5_init.c; sourceTree = "<group>"; };
@@ -719,6 +720,9 @@
 		AA747D9E0F9514B9006C5449 /* sasl2_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sasl2_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D2AAC07E0554694100DB518D /* libsasl2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libsasl2.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA1106DB171FD3EA00301FBD /* xoauth2_init.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = xoauth2_init.c; sourceTree = "<group>"; };
+		FA1106DC171FD3EB00301FBD /* xoauth2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = xoauth2.c; sourceTree = "<group>"; };
+		FA1106DF171FD43100301FBD /* anonymous.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = anonymous.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1710,7 +1714,9 @@
 				A0FB59F8126E55630057FEE9 /* Makefile.in */,
 				A051243A1278D9C400DE46C4 /* Makefile */,
 				A0FB59F9126E55630057FEE9 /* NTMakefile */,
-				A0FB59FA126E55630057FEE9 /* anonymous.c */,
+				FA1106DB171FD3EA00301FBD /* xoauth2_init.c */,
+				FA1106DC171FD3EB00301FBD /* xoauth2.c */,
+				FA1106DF171FD43100301FBD /* anonymous.c */,
 				A0FB59FB126E55630057FEE9 /* anonymous_init.c */,
 				A0FB59FC126E55630057FEE9 /* cram.c */,
 				A0FB59FD126E55630057FEE9 /* crammd5_init.c */,
@@ -2051,7 +2057,6 @@
 				A0FB5AA7126E56410057FEE9 /* plugin_common.c in Sources */,
 				A09611DF126F96BA00671A97 /* db_none.c in Sources */,
 				A09611E0126F96C600671A97 /* allockey.c in Sources */,
-				A09611FB126F9D2900671A97 /* anonymous.c in Sources */,
 				A09611FC126F9D2900671A97 /* anonymous_init.c in Sources */,
 				A09611FD126F9D3100671A97 /* cram.c in Sources */,
 				A09611FE126F9D3100671A97 /* crammd5_init.c in Sources */,
@@ -2071,6 +2076,9 @@
 				A051244D1278DB0A00DE46C4 /* passdss_init.c in Sources */,
 				A05125061278E7FE00DE46C4 /* sasldb.c in Sources */,
 				A05125071278E7FE00DE46C4 /* sasldb_init.c in Sources */,
+				FA1106DD171FD3EB00301FBD /* xoauth2_init.c in Sources */,
+				FA1106DE171FD3EB00301FBD /* xoauth2.c in Sources */,
+				FA1106E0171FD43100301FBD /* anonymous.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

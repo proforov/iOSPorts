@@ -396,8 +396,8 @@
 /* Link PLAIN Staticly */
 #define STATIC_PLAIN 
 
-/* Link PLAIN Staticly */
-#define XOAUTH2_PLAIN
+/* Link XOAUTH2 Staticly */
+#define STATIC_XOAUTH2
 
 /* Link SASLdb Staticly */
 #define STATIC_SASLDB 

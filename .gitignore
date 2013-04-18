@@ -9,3 +9,5 @@ xcuserdata
 /build-aux/iOSPorts-pkginfo
 a.out
 pkgdata_*.m
+ports/security/cyrus-sasl/cyrus-sasl-2.1.25x.tar.gz.md5
+ports/security/cyrus-sasl/cyrus-sasl-2.1.25x/
